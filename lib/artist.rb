@@ -12,8 +12,13 @@ def add_song(song)
   @songs << song
 end
 
+def self.all
+  @@all
+end
+
+
 def save
-  @@all << self
+  self.class.all << self
 end
 
 end
