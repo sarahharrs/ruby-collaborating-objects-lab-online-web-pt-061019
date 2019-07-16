@@ -22,7 +22,7 @@ def save
 end
 
 def self.find_or_create_by_name(name)
-  (my.artist = self.all.find{|artist| artist.name==name} ? :my_artist
+  (my.artist = self.all.find{|artist| artist.name==name} ? my_artist :self.
 
 end
 
